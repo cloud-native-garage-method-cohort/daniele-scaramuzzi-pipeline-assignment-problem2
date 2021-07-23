@@ -7,7 +7,7 @@ jobs:
       - image: circleci/<language>:<version TAG>
         auth:
           username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+          password: $DOCKERHUB_PASSWORD  
     steps:
       - checkout
       - run: echo "this is the build job"
@@ -16,7 +16,7 @@ jobs:
       - image: circleci/<language>:<version TAG>
         auth:
           username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+          password: $DOCKERHUB_PASSWORD  
     steps:
       - checkout
       - run: echo "this is the test job"
@@ -27,3 +27,4 @@ workflows:
     jobs:
       - build
       - test
+      
