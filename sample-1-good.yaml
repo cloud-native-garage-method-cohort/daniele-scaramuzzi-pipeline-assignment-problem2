@@ -14,7 +14,7 @@ spec:
           workspace: pipeline-share-data
       params:
         - name: url
-          value: https://github.com/cloud-native-garage-method-cohort/daniele-scaramuzzi-pipeline-assignment-problem2.git
+          value: https://github.com/
         - name: revision
           value: "main"
     - name: yaml-lint-run #lint yaml
