@@ -28,3 +28,4 @@ spec:
       params:
         - name: args
           value: ["."]
+          
